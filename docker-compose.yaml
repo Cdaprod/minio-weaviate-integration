@@ -38,7 +38,7 @@ services:
  python-app:
     container_name: python-app
     build: ./app
-    image: Cdaprod/python-app
+    image: cdaprod/python-weaviate-initializer-app
     volumes:
       - ./app/data:/app/data
     depends_on:
