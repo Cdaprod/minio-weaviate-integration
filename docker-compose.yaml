@@ -35,8 +35,8 @@ services:
    depends_on:
      - minio
 
- python-environment:
-    container_name: python_initializer
+ python-app:
+    container_name: python-app
     build: ./app
     image: Cdaprod/python-app
     volumes:
@@ -44,5 +44,3 @@ services:
     depends_on:
       - weaviate
       - minio
-
-
