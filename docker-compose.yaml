@@ -5,7 +5,7 @@ services:
    container_name: minio_server
    build:
      context: ./minio
-   image: Cdaprod/minio-server
+   image: cdaprod/minio-server
    volumes:
      - ./minio/data:/data
    ports:
